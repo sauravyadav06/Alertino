@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="grey">#737373</color>
+    <color name="green">#7ed957</color>
+        <color name="colorTemperature">#FF0000</color> <!-- Red for Temperature -->
+        <color name="colorVibration">#00FF00</color>   <!-- Green for Vibration -->
+        <color name="colorHumidity">#0000FF</color>     <!-- Blue for Humidity -->
+        <color name="colorCurrent">#FFFF00</color>      <!-- Yellow for Current -->
+        <color name="colorVoltage">#FF00FF</color>      <!-- Magenta for Voltage -->
+    </resources>
+
