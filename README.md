@@ -1,3 +1,5 @@
+Alertino – IoT-Based Predictive Maintenance
+
 IoT-Based Real-Time Monitoring System
 A Smart Monitoring System built with Android (Kotlin), ESP32/Arduino, and MQTT to detect anomalies in machinery like coolers or motors. It monitors environmental and electrical parameters such as temperature, humidity, vibration, current, and voltage, sending real-time alerts via MQTT when thresholds are exceeded. Data is displayed in a mobile app and logged for visualization on an analytics dashboard.
 🛠️ Key Features
