@@ -1,72 +1,80 @@
-⚡ Alertino – IoT-Based Predictive Maintenance
-Alertino is a smart IoT-based real-time monitoring system built with Android (Kotlin), ESP32/Arduino, and MQTT to detect anomalies in industrial and home machinery like coolers, motors, or fans.
+# ⚡ Alertino – IoT-Based Predictive Maintenance
 
-It tracks environmental and electrical parameters — temperature, humidity, vibration, current, and voltage — and sends real-time alerts when thresholds are breached. The data is visualized on a mobile app dashboard with dynamic charts and cards.
+**Alertino** is a smart IoT-based real-time monitoring system built with **Android (Kotlin)**, **ESP32/Arduino**, and **MQTT** to detect anomalies in machinery like coolers, motors, or fans.
 
-🛠️ Key Features
-Real-Time Monitoring – Continuously tracks sensor data.
+It monitors **temperature**, **humidity**, **vibration**, **current**, and **voltage**, sending real-time alerts when thresholds are exceeded. Data is visualized in a mobile app dashboard with dynamic cards and charts.
 
-Threshold-Based Alerts – Sends push notifications on anomaly detection.
+---
 
-Visual Analytics Dashboard – Displays real-time data with cards and charts.
+## 🛠️ Key Features
 
-Lightweight Communication – Uses MQTT for efficient message delivery.
+- **Real-Time Monitoring** – Continuously tracks sensor data.
+- **Threshold-Based Alerts** – Sends push notifications on anomaly detection.
+- **Visual Analytics Dashboard** – Real-time display using charts and cards.
+- **Lightweight Communication** – MQTT-based efficient messaging.
+- **Offline-to-Online Sync** – Ensures reliable data logging during network outages.
 
-Offline-to-Online Sync – Ensures reliable data logging during network loss.
+---
 
-🧰 Technologies Used
-Android App: Kotlin, Android Studio, MQTT Client
+## 🧰 Technologies Used
 
-Microcontroller: ESP32 using Arduino IDE
+- **Android App:** Kotlin, Android Studio, MQTT Client
+- **Microcontroller:** ESP32 using Arduino IDE
+- **Communication:** MQTT via EMQX / Mosquitto Broker
+- **UI Components:** CardViews, Charts, Gauges, RecyclerView, etc.
 
-Communication: MQTT via EMQX / Mosquitto Broker
+---
 
-UI Components: CardViews, Charts, Gauges, RecyclerView, etc.
+## 📟 Sensors Used
 
-📟 Sensors Used
-Sensor	Purpose	GPIO Pin
-DHT11	Measures temperature & humidity	GPIO 4
-Vibration (Analog)	Detects abnormal vibrations	GPIO 32
-ACS712	Measures current and voltage	GPIO 34
+| Sensor             | Purpose                          | GPIO Pin |
+|--------------------|----------------------------------|----------|
+| **DHT11**          | Measures temperature & humidity  | GPIO 4   |
+| **Analog Vibration** | Detects abnormal vibrations     | GPIO 32  |
+| **ACS712**         | Measures current and voltage     | GPIO 34  |
 
-📲 Android App Highlights
-Displays real-time sensor values
+---
 
-Push notifications for threshold violations
+## 📲 Android App Highlights
 
-Dynamic dashboard with cards and charts
+- Displays real-time sensor values
+- Push notifications for threshold breaches
+- Dynamic cards and charts for clear insights
+- Clean and responsive design
 
-Clean, responsive UI
+---
 
-🔌 How to Use
-🔧 Arduino/ESP32 Setup
-Connect sensors as per GPIO mapping (see above).
+## 🔌 How to Use
 
-Flash the Arduino sketch to your ESP32 board.
+### 1. Arduino/ESP32 Setup
 
-Set Wi-Fi credentials and MQTT broker details in the code.
+- Connect sensors as per GPIO mapping above.
+- Flash the Arduino sketch to your ESP32 board.
+- Configure Wi-Fi and MQTT broker in the code.
 
-🌐 MQTT Broker
-Use public broker broker.emqx.io or host your own (e.g., Mosquitto).
+### 2. MQTT Broker
 
-Subscribe to topic: data/sensor/ESP32
+- Use `broker.emqx.io` or set up your own (e.g., Mosquitto).
+- Subscribe to topic: `data/sensor/ESP32`
 
-📱 Android App
-Open project in Android Studio.
+### 3. Android App
 
-Update the MQTT broker IP in the app’s configuration file.
+- Open the project in Android Studio.
+- Update the MQTT broker IP in the config file.
+- Build and run the app on a physical Android device.
 
-Run the app on a physical Android device.
+---
 
-📊 Use Cases
-🏭 Motor / Cooler Health Monitoring
+## 📊 Use Cases
 
-🧪 Industrial Diagnostics
+- 🏭 Motor / Cooler Health Monitoring  
+- 🧪 Industrial Diagnostics  
+- 🔧 Predictive Maintenance  
+- 🏠 Smart Home or Factory Automation
 
-🔧 Predictive Maintenance
+---
 
-🏠 Smart Home / Factory Automation
+## 📬 Contact
 
-📬 Contact
-Need help or want to collaborate?
+Need help or want to collaborate?  
 📧 sauravyadav5150@example.com
